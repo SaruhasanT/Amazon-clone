@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amazon Clone</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Space+Grotesk:wght@300..700&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="logo">
+          <img src="./assets/images/amazon_logo.png" alt="Logo Image" />
+        </div>
+        <div class="deliver-location">
+          <span>Deliver to</span>
+          <span class="location">
+            <span>
+              <img src="./assets/icons/location.svg" class="location-svg" />
+            </span>
+            <span class="country">
+              SriLanka
+            </span>
+          </span>
+        </div>
+        <div class="search-field">
+          <select>
+            <option selected value="all">All Departments</option>
+            <option value="arts-and-crafts">Arts & Crafts</option>
+            <option value="Automotive">Automotive</option>
+            <option value="Baby">Baby</option>
+            <option value="Beauty & Personal Care">
+              Beauty & Personal Care
+            </option>
+            <option value="Books">Books</option>
+            <option value="Boys' Fashion">Boys' Fashion</option>
+            <option value="Computers">Computers</option>
+            <option value="Deals">Deals</option>
+            <option value="Digital Music">Digital Music</option>
+            <option value="Electronic">Electronic</option>
+            <option value="Girls' Fashion">Girls' Fashion</option>
+            <option value="Health & Household">Health & Household</option>
+            <option value="Home & Kitchen">Home & Kitchen</option>
+            <option value="Industrial & Scientific">
+              Industrial & Scientific
+            </option>
+            <option value="Tools & Hoem Inprovement">
+              Tools & Home Improvement
+            </option>
+          </select>
+          <input placeholder="Search Amazon" class="search-input" />
+          <button class="search-btn">
+            <img src="./assets/icons/search.svg" />
+          </button>
+        </div>
+        <div class="language">
+          <div>EN</div>
+        </div>
+        <div class="acc-list">
+          <span>Hello, sign in</span>
+          <span>Account & Lists</span>
+        </div>
+        <div class="ret-ord">
+          <span>Returns</span>
+          <span>& Orders</span>
+        </div>
+        <div class="cart">
+          <img src="./assets/icons/shopping-cart.svg" />
+          <span class="cart-count">0</span>
+          <span>Cart</span>
+        </div>
+      </div>
+      <div class="navigation-list">
+        <div class="hamburger-menu-area" id="hamburger-menu-area">
+          <img src="./assets/icons/hamburger-menu.svg" class="hamburger-menu" />
+          <span>All</span>
+        </div>
+        <div>Today's Deals</div>
+        <div>Customer Service</div>
+        <div>Registry</div>
+        <div>Gift Cards</div>
+        <div>Sell</div>
+      </div>
+      <div class="close-icon">
+        <img src="./assets/icons/close.svg" class="close">
+      </div>
+      <div class="options" id="options">
+        <div class="head">
+          <h2>Hello, sign in</h2>
+        </div>
+        <div class="body">
+          <div class="digital-content">
+            <h3>Digital Content & Devices</h3>
+            <div class="shown-items">
+              <div>
+                <p>Amazon Music</p>
+                <img src="./assets/icons/arrow-next.svg">
+              </div>
+              <div>
+                <p>Kindle E-readers & Books</p>
+                <img src="./assets/icons/arrow-next.svg">
+              </div>
+              <div>
+                <p>Amazon Appstore</p>
+                <img src="./assets/icons/arrow-next.svg">
+              </div>
+            </div>
+            
+          </div>
+          <div class="departments">
+            <h3>Shop by Department</h3>
+            <div class="shown-items">
+              <div>
+                <p>Electronics</p>
+                <img src="./assets/icons/arrow-next.svg">
+              </div>
+              <div>
+                <p>Computers</p>
+                <img src="./assets/icons/arrow-next.svg">
+              </div>
+              <div>
+                <p>Smart Home</p>
+                <img src="./assets/icons/arrow-next.svg">
+              </div>
+              <div>
+                <p>Arts & Crafts</p>
+                <img src="./assets/icons/arrow-next.svg">
+              </div>
+            </div>
+            <div class="hidden-items">
+              <div>
+                <p>Automotive</p>
+                <img src="./assets/icons/arrow-next.svg">
+              </div>
+              <div>
+                <p>Baby</p>
+                <img src="./assets/icons/arrow-next.svg">
+              </div>
+              <div>
+                <p>Beauty and Personal Care</p>
+                <img src="./assets/icons/arrow-next.svg">
+              </div>
+              <div>
+                <p>Women's Fashion</p>
+                <img src="./assets/icons/arrow-next.svg">
+              </div>
+              <div>
+                <p>Men's Fashion</p>
+                <img src="./assets/icons/arrow-next.svg">
+              </div>
+              <div>
+                <p>Boy's Fashion</p>
+                <img src="./assets/icons/arrow-next.svg">
+              </div>
+              <div>
+                <p>Girl's Fashion</p>
+                <img src="./assets/icons/arrow-next.svg">
+              </div>
+            </div>
+            <div>
+              <div class="control-expand" style="display: flex; justify-content: flex-start; gap: 10px">
+                <span>See all</span>
+                <span>
+                  <img src="./assets/icons/arrow-next.svg" class="expand-arrow">
+                </span>
+              </div>
+            </div>
+            
+          </div>
+          <div class="programs">
+            <h3>Programs & Features</h3>
+            <div class="shown-items">
+              <div>
+                <p>Gift Cards</p>
+                <img src="./assets/icons/arrow-next.svg">
+              </div>
+              <div>
+                <p>Shop By Interest</p>
+                <img src="./assets/icons/arrow-next.svg">
+              </div>
+              <div>
+                <p>Amazon Live</p>
+                <img src="./assets/icons/arrow-next.svg">
+              </div>
+              <div>
+                <p>International Shopping</p>
+                <img src="./assets/icons/arrow-next.svg">
+              </div>
+            </div>
+            <div class="hidden-items">
+              <div>
+                <p>Amazon Second Chance</p>
+                <img src="./assets/icons/arrow-next.svg">
+              </div>
+            </div>
+            <div>
+              <div class="control-expand" style="display: flex; justify-content: flex-start; gap: 10px">
+                <span>See all</span>
+                <span>
+                  <img src="./assets/icons/arrow-next.svg" class="expand-arrow">
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="helps">
+
+          </div>
+        </div>
+      </div>
+      <div class="main-container">
+        <div class="carousal-area">
+          <button class="prev-button slide-button">
+            <img src="./assets/icons/arrow-prev.svg" alt="previous" />
+          </button>
+          <button class="next-button slide-button">
+            <img src="./assets/icons/arrow-next.svg" alt="next" />
+          </button>
+          <ul class="carousal-slides">
+            <li>
+              <img
+                src="./assets/images/carousal/book-shop.jpg"
+                class="active"
+                data-index="1"
+                data-active="true" />
+            </li>
+            <li>
+              <img
+                src="./assets/images/carousal/game-consoles.jpg"
+                data-index="2" />
+            </li>
+            <li>
+              <img
+                src="./assets/images/carousal/kitchen-items.jpg"
+                data-index="3" />
+            </li>
+            <li>
+              <img
+                src="./assets/images/carousal/makup-products.jpg"
+                data-index="4" />
+            </li>
+            <li>
+              <img src="./assets/images/carousal/dad-gift.jpg" data-index="5" />
+            </li>
+            <li>
+              <img src="./assets/images/carousal/toys.jpg" data-index="6" />
+            </li>
+          </ul>
+        </div>
+        <div class="products-grid">
+          <div class="gaming-accessories">
+            <h2>Gaming accessories</h2>
+            <div class="grid">
+              <div>
+                <div>
+                  <img src="./assets/grid-images/headset.jpg" />
+                </div>
+                <p>Headsets</p>
+              </div>
+              <div>
+                <div>
+                  <img src="./assets/grid-images/keyboard.jpg" />
+                </div>
+                <p>Keyboards</p>
+              </div>
+              <div>
+                <div>
+                  <img src="./assets/grid-images/mouse.jpg" />
+                </div>
+                <p>Computer mice</p>
+              </div>
+              <div>
+                <div>
+                  <img src="./assets/grid-images/chair.jpg" />
+                </div>
+                <p>Chair</p>
+              </div>
+            </div>
+            <a>See more</a>
+          </div>
+          <div class="refresh">
+            <h2>Refresh your space</h2>
+            <div class="grid">
+              <div>
+                <div>
+                  <img src="./assets/grid-images/jeans.jpg" />
+                </div>
+                <p>Jeans under $50</p>
+              </div>
+              <div>
+                <div>
+                  <img src="./assets/grid-images/top.jpg" />
+                </div>
+                <p>Tops under $25</p>
+              </div>
+              <div>
+                <div>
+                  <img src="./assets/grid-images/dress.jpg" />
+                </div>
+                <p>Dresses under $30</p>
+              </div>
+              <div>
+                <div>
+                  <img src="./assets/grid-images/shoes.jpg" />
+                </div>
+                <p>Shoes under $15</p>
+              </div>
+            </div>
+            <a>See all deals</a>
+          </div>
+          <div class="shop-deals">
+            <h2>Shop deals in Fashion</h2>
+            <div class="grid">
+              <div>
+                <div>
+                  <img src="./assets/grid-images/dining.jpg" />
+                </div>
+                <p>Dining</p>
+              </div>
+              <div>
+                <div>
+                  <img src="./assets/grid-images/home.jpg" />
+                </div>
+                <p>Home</p>
+              </div>
+              <div>
+                <div>
+                  <img src="./assets/grid-images/kitchen.jpg" />
+                </div>
+                <p>Kitchen</p>
+              </div>
+              <div>
+                <div>
+                  <img src="./assets/grid-images/perfume.jpg" />
+                </div>
+                <p>Health and Beauty</p>
+              </div>
+            </div>
+            <a href="#">See more</a>
+          </div>
+          <div class="pc-deals">
+            <h2>Deals in PCs</h2>
+            <div class="image">
+              <img src="./assets/grid-images/pc.jpg" />
+            </div>
+            <a>Shop now</a>
+          </div>
+          <div class="amazon-gadget-store">
+            <h2>Amazon Gadget Store</h2>
+            <div class="main-pic">
+              <img src="./assets/grid-images/smartphone.jpg" />
+              <p>Smartphones</p>
+            </div>
+            <div class="device-grid">
+              <div>
+                <img src="./assets/grid-images/tablets.jpg" />
+                <p>Tablets</p>
+              </div>
+              <div>
+                <img src="./assets/grid-images/laptops.jpg" />
+                <p>Laptops</p>
+              </div>
+              <div>
+                <img src="./assets/grid-images/tv.jpg" />
+                <p>TVs</p>
+              </div>
+            </div>
+            <a href="#">See more from Amazon Gadgets</a>
+          </div>
+          <div class="shop-deals">
+            <h2>Deals on gifts for Dad</h2>
+            <div class="grid">
+              <div>
+                <div>
+                  <img src="./assets/grid-images/tech.jpg" />
+                </div>
+                <p>Tech</p>
+              </div>
+              <div>
+                <div>
+                  <img src="./assets/grid-images/adventure-gear.jpg" />
+                </div>
+                <p>Adventure gear</p>
+              </div>
+              <div>
+                <div>
+                  <img src="./assets/grid-images/unique-finds.jpg" />
+                </div>
+                <p>unique finds</p>
+              </div>
+              <div>
+                <div>
+                  <img src="./assets/grid-images/health-and-wellness.jpg" />
+                </div>
+                <p>Health and wellness</p>
+              </div>
+            </div>
+            <a href="#">Shop all</a>
+          </div>
+          <div class="toy-products">
+            <h2>Toys under $25</h2>
+            <div class="image">
+              <img src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2023/EBF23/Fuji_Desktop_Single_image_EBF_1x_v3._SY304_CB573698005_.jpg" />
+            </div>
+            <a>Shop now</a>
+          </div>
+          <div class="beauty-products">
+            <h2>Toys under $25</h2>
+            <div class="image">
+              <img src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2023/EBF23/Fuji_Desktop_Single_image_EBF_1x_v5._SY304_CB573698005_.jpg" />
+            </div>
+            <a>Shop now</a>
+          </div>
+        </div>
+        <div class="image-slider-container">
+          <h2>Top picks for Sri Lanka</h2>
+          <div class="image-slider">
+            <button class="slider-btn slider-prev">
+              <img src="./assets/icons/arrow-prev.svg">
+            </button>
+            <button class="slider-btn slider-next">
+              <img src="./assets/icons/arrow-next.svg">
+            </button>
+            <img src="https://m.media-amazon.com/images/I/81wRikEoRpL._AC_SY200_.jpg" >
+            <img src="https://m.media-amazon.com/images/I/51NyvM7IVrL._AC_SY200_.jpg" >
+            <img src="https://m.media-amazon.com/images/I/71lRPcRgJjL._AC_SY200_.jpg" >
+            <img src="https://m.media-amazon.com/images/I/81HgLJqSsnL._AC_SY200_.jpg" >
+            <img src="https://m.media-amazon.com/images/I/81EXf5VGPfL._AC_SY200_.jpg" >
+            <img src="https://m.media-amazon.com/images/I/51egL2B2EnL._AC_SY200_.jpg" >
+            <img src="https://m.media-amazon.com/images/I/71HvQqtEebS._AC_SY200_.jpg" >
+            <img src="https://m.media-amazon.com/images/I/61H6D8d3cAL._AC_SY200_.jpg" >
+            <img src="https://m.media-amazon.com/images/I/71sNdJtCFFL._AC_SY200_.jpg" >
+            <img src="https://m.media-amazon.com/images/I/612pm55S5rL._AC_SY200_.jpg" >
+            <img src="https://m.media-amazon.com/images/I/61vE8R1Y9qL._AC_SY200_.jpg" >
+            <img src="https://m.media-amazon.com/images/I/61eqVuqOcSL._AC_SY200_.jpg" >
+            <img src="https://m.media-amazon.com/images/I/711F31COq2L._AC_SY200_.jpg" >
+            <img src="https://m.media-amazon.com/images/I/71Pr5rU3MeL._AC_SY200_.jpg" >
+            <img src="https://m.media-amazon.com/images/I/71TjjRTysRL._AC_SY200_.jpg" >
+          </div>
+        </div>
+      </div>
+      <div class="location-popup-area">
+      <div class="location-popUp">
+        <div class="heading">
+          <h4>Choose your location</h4>
+        </div>
+        <div class="content">
+          <p class="description">Delivery options and delivery speeds may vary for different locations</p>
+          <button class="sign-in">Sign in to see your addresses</button>
+          <div class="zip-border">
+            <p>or enter a US zip code</p>
+          </div>
+          <div class="input">
+            <input type="text">
+            <button>Apply</button>
+          </div>
+          <div class="or-border">
+            <p>or</p>
+          </div>
+          <select>
+            <option>Srilanka</option>
+            <option>India</option>
+            <option>Pakistan</option>
+            <option>Japan</option>
+          </select>
+          <div class="done">
+            <button class="done-btn">Done</button>
+          </div>
+        </div>
+      </div>
+      </div>
+      
+      
+    </div>
+    <div class="black-screen"></div>
+
+    <img name="saruhasan"></img>
+  </body>
+</html>
